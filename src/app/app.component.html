@@ -1,5 +1,48 @@
 <!-- <app-menu></app-menu> -->
 <ion-app>
   <!-- <ion-router-outlet id="main"></ion-router-outlet> -->
-  <ion-router-outlet ></ion-router-outlet>
+  <ion-menu side="start" class="my-custom-menu" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="conocenos">
+          <ion-icon  name="home-outline"></ion-icon>
+          <ion-label>Conocenos</ion-label>
+        </ion-item>
+        <ion-item routerLink="oferta-educativa/licenciatura" >
+          <ion-icon name="book-outline"></ion-icon>
+          <ion-label>Oferta educativa</ion-label>
+        </ion-item>
+        <ion-item routerLink="alumnos">
+          <ion-icon  name="school-outline"></ion-icon>
+        <ion-label>Alumnos</ion-label>
+        </ion-item>
+        <ion-item routerLink="profesores">
+          <ion-icon  name="people-outline"></ion-icon>
+          <ion-label>Profesores</ion-label>
+        </ion-item>
+        <ion-item routerLink="academia">
+          <ion-icon name="library-outline"></ion-icon>
+          <ion-label>Academia</ion-label>
+        </ion-item>
+        <ion-item  routerLink="contactanos">
+          <ion-icon name="planet-outline"></ion-icon>
+          <ion-label>Contactanos</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>{{locationMenu}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-router-outlet id="main" ></ion-router-outlet>
 </ion-app>

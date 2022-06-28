@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { OfertaEducativaPageRoutingModule } from './oferta-educativa-routing.module';
 
 import { OfertaEducativaPage } from './oferta-educativa.page';
+import { LicenciaturasComponent } from './LICENCIATURAS/licenciaturas.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { OfertaEducativaPage } from './oferta-educativa.page';
     IonicModule,
     OfertaEducativaPageRoutingModule
   ],
-  declarations: [OfertaEducativaPage]
+  declarations: [OfertaEducativaPage,LicenciaturasComponent]
 })
 export class OfertaEducativaPageModule {}
