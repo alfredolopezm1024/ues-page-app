@@ -1,2 +1,21 @@
-<a routerLink="licenciatura" style="position:absolute;top: 10%;z-index: 1;" >Licenciatura</a>
-<ion-router-outlet id="main2" ></ion-router-outlet>
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Alumnos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content>
+    <ion-row>
+        <ion-col size="12" class="text-naranja ion-text-center">
+            <h1 class="text-2rem">Oferta educativa</h1>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size="12" style="z-index: 1;">
+            <a routerLink="ingenierias" class="link-carreras" #ingenieria="routerLinkActive" routerLinkActive>Ingenierias</a>
+            <a routerLink="licenciaturas"  class="link-carreras" #licenciaturas="routerLinkActive" routerLinkActive>Licenciaturas</a>
+            <a routerLink="maestrias"  class="link-carreras" #maestrias="routerLinkActive" routerLinkActive>Maestrias</a>
+        </ion-col>
+    </ion-row>
+</ion-content>
+<ion-router-outlet id="main2" style="top: 200px; "></ion-router-outlet>

@@ -250,6 +250,13 @@
 	--ion-color-naranja-contrast-rgb: 0,0,0;
 	--ion-color-naranja-shade: #e09000;
 	--ion-color-naranja-tint: #ffad1a;
+
+  --ion-color-gray: #808080;
+	--ion-color-gray-rgb: 128,128,128;
+	--ion-color-gray-contrast: #000000;
+	--ion-color-gray-contrast-rgb: 0,0,0;
+	--ion-color-gray-shade: #717171;
+	--ion-color-gray-tint: #8d8d8d;
 }
 
 .ion-color-vino {
@@ -268,6 +275,15 @@
 	--ion-color-contrast-rgb: var(--ion-color-naranja-contrast-rgb);
 	--ion-color-shade: var(--ion-color-naranja-shade);
 	--ion-color-tint: var(--ion-color-naranja-tint);
+}
+
+.ion-color-gray {
+	--ion-color-base: var(--ion-color-gray);
+	--ion-color-base-rgb: var(--ion-color-gray-rgb);
+	--ion-color-contrast: var(--ion-color-gray-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-gray-contrast-rgb);
+	--ion-color-shade: var(--ion-color-gray-shade);
+	--ion-color-tint: var(--ion-color-gray-tint);
 }
 
 .text-black{
@@ -307,7 +323,7 @@
   border-width: 1px;
   padding: 15px;
   border-color: #cccccc;
-  height: 275px;
+  // height: 275px;
 }
 
 .text-4rem{
@@ -318,7 +334,32 @@
   font-size: 3rem;
 }
 
+.text-2rem{
+  font-size: 2rem;
+}
+
+.text-1rem{
+  font-size: 1rem;
+}
+
+
 .card-history{
   background-color: #f0f0f0;
   height: 275px;
+}
+
+.link-carreras{
+  color: var(--ion-color-gray);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: unset;
+  font-size: 1.2rem;
+  border:solid var(--ion-color-naranja) 2px 1px 1px 1px;
+}
+
+.link-carreras:hover{
+  border-bottom: solid var(--ion-color-naranja) 3px;
+
 }

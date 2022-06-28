@@ -8,4 +8,12 @@ import { MenuController } from '@ionic/angular';
 })
 export class AppComponent {
   constructor(private menu: MenuController) {}
+  locationMenu:string='Conocenos';
+
+
+  toogleMenu(_page:string){
+    this.locationMenu=_page;
+    this.menu.toggle();
+  }
+
 }

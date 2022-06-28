@@ -1,15 +1,11 @@
 <ion-row>
-  <ion-col size="8"  offset="2">
-    <ion-row>
-      <ion-col size="12" class="text-naranja ion-text-center">
-        <h1 class="text-3rem">Oferta educativa</h1>
-      </ion-col>
-    </ion-row>
+  <ion-col size="12">
+
     <ion-row >
-      <ion-col size="6" *ngFor="let item of carreras" class="">
+      <ion-col size="12" *ngFor="let item of carreras" class="">
         <div class="ues-card">
           <ion-row>
-            <ion-col size="6">
+            <ion-col size="12">
               <ion-row>
               <ion-col size="12">
                 <h2>{{item.titulo}}</h2>
@@ -19,7 +15,7 @@
               </ion-col>
             </ion-row>
           </ion-col>
-          <ion-col size="6">
+          <ion-col size="12">
             <img src="{{item.imagen}}">
           </ion-col>
         </ion-row>
