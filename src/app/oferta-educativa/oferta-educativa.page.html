@@ -6,15 +6,15 @@
   
 <ion-content>
     <ion-row>
-        <ion-col size="12" class="text-naranja ion-text-center">
+        <ion-col size="12" class="text-naranja ion-text-center">    
             <h1 class="text-2rem">Oferta educativa</h1>
         </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size="12" style="z-index: 1;">
-            <a routerLink="ingenierias" class="link-carreras" #ingenieria="routerLinkActive" routerLinkActive>Ingenierias</a>
-            <a routerLink="licenciaturas"  class="link-carreras" #licenciaturas="routerLinkActive" routerLinkActive>Licenciaturas</a>
-            <a routerLink="maestrias"  class="link-carreras" #maestrias="routerLinkActive" routerLinkActive>Maestrias</a>
+            <a  (click)="goTo('ingenierias')" class="link-carreras" >Ingenierias</a>
+            <a   (click)="goTo('licenciaturas')"  class="link-carreras" >Licenciaturas</a>
+            <a  (click)="goTo('maestrias')"  class="link-carreras">Maestrias</a>
         </ion-col>
     </ion-row>
 </ion-content>
