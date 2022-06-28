@@ -12,9 +12,11 @@ export class OfertaEducativaPage implements OnInit {
   ngOnInit() {
   }
 
+  selected='ingenierias';
 
 
   goTo(page){
+    this.selected=page;
     this.router.navigate([`/oferta-educativa/${page}`])
   }
 

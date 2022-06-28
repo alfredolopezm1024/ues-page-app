@@ -361,5 +361,9 @@
 
 .link-carreras:hover{
   border-bottom: solid var(--ion-color-naranja) 3px;
+  
+}
 
+.link-carreras.activa{
+  border-bottom: solid var(--ion-color-naranja) 3px;
 }

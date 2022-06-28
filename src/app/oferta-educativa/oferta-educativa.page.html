@@ -11,10 +11,10 @@
         </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col size="12" style="z-index: 1;">
-            <a  (click)="goTo('ingenierias')" class="link-carreras" >Ingenierias</a>
-            <a   (click)="goTo('licenciaturas')"  class="link-carreras" >Licenciaturas</a>
-            <a  (click)="goTo('maestrias')"  class="link-carreras">Maestrias</a>
+        <ion-col size="12" style="z-index: 1; text-align: center;">
+            <a  (click)="goTo('ingenierias')" class="link-carreras {{selected=='ingenierias'?'activa':''}}" >Ingenierias</a>
+            <a   (click)="goTo('licenciaturas')"  class="link-carreras {{selected=='licenciaturas'?'activa':''}}" >Licenciaturas</a>
+            <a  (click)="goTo('maestrias')"  class="link-carreras {{selected=='maestrias'?'activa':''}}">Maestrias</a>
         </ion-col>
     </ion-row>
 </ion-content>
