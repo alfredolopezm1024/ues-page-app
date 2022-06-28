@@ -234,3 +234,91 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+
+:root {
+	--ion-color-vino: #5d2a2c ;
+	--ion-color-vino-rgb: 93,42,44;
+	--ion-color-vino-contrast: #ffffff;
+	--ion-color-vino-contrast-rgb: 255,255,255;
+	--ion-color-vino-shade: #522527;
+	--ion-color-vino-tint: #6d3f41;
+
+  --ion-color-naranja: #ffa400 ;
+	--ion-color-naranja-rgb: 255,164,0;
+	--ion-color-naranja-contrast: #000000;
+	--ion-color-naranja-contrast-rgb: 0,0,0;
+	--ion-color-naranja-shade: #e09000;
+	--ion-color-naranja-tint: #ffad1a;
+}
+
+.ion-color-vino {
+	--ion-color-base: var(--ion-color-vino);
+	--ion-color-base-rgb: var(--ion-color-vino-rgb);
+	--ion-color-contrast: var(--ion-color-vino-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-vino-contrast-rgb);
+	--ion-color-shade: var(--ion-color-vino-shade);
+	--ion-color-tint: var(--ion-color-vino-tint);
+}
+
+.ion-color-naranja {
+	--ion-color-base: var(--ion-color-naranja);
+	--ion-color-base-rgb: var(--ion-color-naranja-rgb);
+	--ion-color-contrast: var(--ion-color-naranja-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-naranja-contrast-rgb);
+	--ion-color-shade: var(--ion-color-naranja-shade);
+	--ion-color-tint: var(--ion-color-naranja-tint);
+}
+
+.text-black{
+  color: #000000;  
+}
+
+.text-naranja{
+  color: #ffa400 ;
+}
+
+.text-vino{
+  color: #5d2a2c ;
+}
+
+.backColorFacebook{
+  background-color: #3b599880;
+}
+.backColorTwitter{
+  background-color: #2ea4ff80;
+}
+.backColorInstagram{
+  background-color: #ffc62980;
+}
+.backColorYoutube{
+  background-color: #ff2e2e80;
+}
+
+.backColorUes{
+  background-color: #5d2a2c80;
+}
+
+
+
+.ues-card{
+  background-color: #f8f8f8;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px;
+  border-color: #cccccc;
+  height: 275px;
+}
+
+.text-4rem{
+  font-size: 4rem;
+}
+
+.text-3rem{
+  font-size: 3rem;
+}
+
+.card-history{
+  background-color: #f0f0f0;
+  height: 275px;
+}

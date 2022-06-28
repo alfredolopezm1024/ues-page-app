@@ -1,0 +1,184 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conocenos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-justify">
+
+
+  <ion-row>
+    <ion-col size="8"  offset="2">
+      
+      
+
+      <ion-row>
+        <ion-col size="12" class="text-naranja ion-text-center">
+          <h1 class="text-4rem text-vino">
+            <b>
+              Universidad estatal de Sonora
+            </b>
+          </h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="text-naranja ion-text-center text-3rem">
+            <b>
+              Filosofía Institucional
+            </b>
+          </h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-card>
+            <ion-item class="ion-padding-bottom ">
+              <img src="../../assets/ues-conocenos/UesEntrada.jpg">
+            </ion-item>
+            <ion-card-content>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" >
+                  <h1><b>Misión</b></h1>
+                </ion-col>
+                <ion-col size="12">
+                  <p>
+                    La Universidad Estatal de Sonora tiene la misión de formar profesionistas integrales y competentes en los ámbitos local, nacional e internacional, a través de un proceso educativo incluyente, equitativo y de calidad, que contribuyan al desarrollo científico, tecnológico, cultural y sostenible de la sociedad.
+                  </p>                  
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" size="12" >
+                  <h1><b>Visión 2030</b></h1>
+                </ion-col>
+                <ion-col size="12">
+                  <p>
+                    La Universidad Estatal de Sonora es reconocida en el estado por la calidad de sus procesos académicos y administrativos, para el cumplimiento de sus funciones de docencia, investigación, vinculación y extensión, y la formación de ciudadanos y profesionistas de alto nivel, que contribuyan al desarrollo sostenible en la sociedad.
+                  </p>                  
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" size="12" >
+                  <h1><b>Política de Calidad</b></h1>
+                </ion-col>
+                <ion-col size="12">
+                  <p>
+                    La Universidad Estatal de Sonora está comprometida con la formación profesional de sus estudiantes, a través de una oferta educativa pertinente y una administración ordenada, eficiente y transparente, con un enfoque de mejora continua en sus procesos, logrando egresados de excelencia, con habilidades y competencias para resolver las necesidades del entorno social y del medio ambiente.
+                  </p>                  
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" size="12" >
+                  <h1><b>Objetivos de Calidad</b></h1>
+                </ion-col>
+                <ion-col size="12">
+                    <ul>
+                      <li>Fortalecer el modelo educativo de la Universidad para favorecer el ingreso, la permanencia y egreso de los estudiantes.</li>
+                      <li>Promover la formación integral de los estudiantes a través de la ciencia, el deporte, la cultura, la salud, el cuidado del medio ambiente y los valores de la Universidad.</li>
+                      <li>Asegurar la calidad de los programas educativos mediante la consolidación de los procesos de acreditación.</li>
+                    </ul>
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" size="12" >
+                  <h1><b>Politica Institucional, Sistema de Gestion Integral</b></h1>
+                </ion-col>
+                <ion-col size="12">
+                  <p>
+                    La Universidad Estatal de Sonora está comprometida con la formación profesional de sus estudiantes, a través de una oferta educativa pertinente y una administración ordenada, eficiente y transparente, con un enfoque de mejora continua en sus procesos, logrando egresados de excelencia, con habilidades y competencias para resolver las necesidades del entorno social y del medio ambiente, minimizando los impactos ambientales, previniendo la contaminación; cumpliendo la normatividad aplicable y optimizando nuestro Sistema de Gestión Integral.
+                  </p>                  
+                </ion-col>
+              </ion-row>
+              <ion-row class="ion-padding-bottom">
+                <ion-col size="12" size="12" >
+                  <h1><a href="https://www.ues.mx/archivos/conocenos/filosofia/MANUAL_PARA_EL_SISTEMA_DE_GESTION_INTEGRAL2022v2.pdf" target="_blank" class="text-naranja">Manual para el Sistema de Gestión Integral</a></h1>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+      <ion-item-divider>
+        <ion-label>
+        </ion-label>
+      </ion-item-divider>
+      <ion-row>
+        <ion-col size="12">
+          <h1 class="text-naranja ion-text-center text-3rem">
+            <b>
+              Historia
+            </b>
+          </h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <div class="timeline">
+            <div class="container {{time.lado?'left':'right'}}" *ngFor="let time of historiaUes">
+              <div class="content" *ngFor="let activitie of time.actividades">
+                <div>
+                  <h2>{{time.anno}}</h2>
+                  <label for="">
+                    <b> {{activitie.titulo}} </b><b>{{activitie.subtitulo}}</b> 
+                  </label> 
+                  <p>
+                    {{activitie.descripcion}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<!-- <ion-card>
+            <ion-item>
+              <ion-card-header>
+                <ion-card-title class="text-naranja">
+                  <h1>
+                    <b>
+                      Historia
+                    </b>
+                  </h1> 
+                </ion-card-title>
+                <ion-card-subtitle>
+                  ESTIMULANDO EL ESPÍRITU CON LA FUERZA DEL SABER.
+                </ion-card-subtitle>
+              </ion-card-header>
+            </ion-item>
+            <ion-item>
+              <ion-slides #carusel>
+                <ion-slide *ngFor="let time of historiaUes" >
+                  <ion-row>
+                    <ion-col size="12">
+                      <h1>
+                        <b>
+                          {{time.anno}}
+                        </b>
+                      </h1>
+                    </ion-col>
+                    <ion-col size="12" *ngFor="let activitie of time.actividades" class="ion-text-justify">
+                      <ion-card class="card-history">
+                        <ion-card-header>
+                          <ion-card-title>{{activitie.titulo}}</ion-card-title>
+                          <ion-card-subtitle>{{activitie.subtitulo}}</ion-card-subtitle>
+                        </ion-card-header>
+                        <ion-card-content>
+                          {{activitie.descripcion}}
+                        </ion-card-content>
+                      </ion-card>
+                    </ion-col>
+                  </ion-row>
+                </ion-slide>
+              </ion-slides>
+            </ion-item>
+          </ion-card> -->
